@@ -6,7 +6,6 @@ interface StyledButtonProps {
   isPrimary?: boolean;
   isSecondary?: boolean;
   isSmall?: boolean;
-  className?: string;
   children: React.ReactNode;
 }
 
