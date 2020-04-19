@@ -26,7 +26,6 @@ const StyledButton = styled.button(({ isPrimary, isSecondary, isSmall }: StyledB
   // Conditional props can be added
   isSmall ? tw`text-sm` : tw`text-lg`,
 
-  // Your tailwind.config.js styles are added by <Theme> in pages/index.js
   css`
     color: white;
   `
