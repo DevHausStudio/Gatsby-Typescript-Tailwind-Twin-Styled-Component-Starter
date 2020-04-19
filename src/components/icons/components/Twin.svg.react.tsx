@@ -1,12 +1,9 @@
-import React, { SVGProps } from 'react'
+import React, { SVGProps } from 'react';
 
 const TwinSvg = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="-5 -4 42 42" {...props}>
     <defs>
-      <linearGradient id="twin_gradient"
-        x1="0%" y1="0%"
-        x2="0%" y2="100%"
-        spreadMethod="pad">
+      <linearGradient id="twin_gradient" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
         <stop offset="0%" stopColor="#db02ff" opacity="1" />
         <stop offset="100%" stopColor="#3735ff" opacity="1" />
       </linearGradient>
@@ -19,10 +16,7 @@ const TwinSvg = (props: SVGProps<SVGSVGElement>) => (
       d="m-2.7803e-7 11.667c1.4828e-7 -6.2223 3.3515-10.111 10.055-11.667-3.3515 2.3333-4.6083 5.0556-3.7705 8.1667 0.47806 1.7751 1.8653 3.0438 3.4009 4.4481 2.5016 2.2877 5.3968 4.9354 5.3968 10.718 0 6.2223-3.3515 10.111-10.054 11.667 3.3515-2.3333 4.6083-5.0556 3.7704-8.1667-0.47805-1.775-1.8653-3.0438-3.4009-4.4481-2.5015-2.2877-5.3967-4.9354-5.3967-10.718z"
       fill="url(#twin_gradient)"
     />
-
   </svg>
-)
+);
 
-export default TwinSvg
-
-
+export default TwinSvg;

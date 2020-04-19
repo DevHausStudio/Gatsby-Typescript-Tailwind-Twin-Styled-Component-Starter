@@ -15,7 +15,8 @@ const TailwindIcon = (props: SVGProps<SVGSVGElement>) => (
         y1={-21.333}
         x2={64}
         y2={85.333}
-        gradientUnits="userSpaceOnUse">
+        gradientUnits="userSpaceOnUse"
+      >
         <stop stopColor="#2383AE" />
         <stop offset={1} stopColor="#6DD7B9" />
       </linearGradient>

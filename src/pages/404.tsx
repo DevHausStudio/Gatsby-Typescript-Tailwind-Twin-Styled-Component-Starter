@@ -1,5 +1,5 @@
-import React from 'react'
+import React from 'react';
 
-const ErrorPage = () => <>Not found</>
+const ErrorPage = () => <>Not found</>;
 
-export default ErrorPage
+export default ErrorPage;

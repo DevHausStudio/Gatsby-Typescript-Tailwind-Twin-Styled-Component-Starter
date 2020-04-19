@@ -1,7 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import { GatsbyIcon, TailwindIcon, StyledComponentsIcon, TypescriptIcon, Button, GithubIcon, TwinIcon } from '../components';
+import {
+  GatsbyIcon,
+  TailwindIcon,
+  StyledComponentsIcon,
+  TypescriptIcon,
+  Button,
+  GithubIcon,
+  TwinIcon
+} from '../components';
 
 const Wrapper = styled.div`
   ${tw`flex flex-col items-center justify-center h-screen`}
@@ -54,14 +62,19 @@ const Index = () => (
       <div className="flex justify-between">
         <Button isPrimary>Primary</Button>
         <Button isSecondary>Secondary</Button>
-        <Button isPrimary isSmall>Small Primary</Button>
-        <Button isSecondary isSmall>Small Secondary</Button>
+        <Button isPrimary isSmall>
+          Small Primary
+        </Button>
+        <Button isSecondary isSmall>
+          Small Secondary
+        </Button>
       </div>
       <Footer>
         <a
           href="https://github.com/denvash/gatsby-styled-tailwind-storybook-starter"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           <GithubIcon />
         </a>
       </Footer>
