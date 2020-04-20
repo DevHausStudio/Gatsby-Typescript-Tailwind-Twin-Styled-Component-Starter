@@ -1,16 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import tw from 'twin.macro';
 import {
   GatsbyIcon,
   TailwindIcon,
   StyledComponentsIcon,
   TypescriptIcon,
-  Button,
   GithubIcon,
   TwinIcon
 } from '../components';
-
+import Theme from '../components/theme';
+import Button from '../components/Button';
+/// <reference types="styled-components/cssprop" />
 const Wrapper = styled.div`
   ${tw`flex flex-col items-center justify-center h-screen`}
 `;
@@ -48,38 +49,52 @@ const Footer = styled.footer`
 `;
 
 const Index = () => (
-  <Wrapper>
-    <Main>
-      <Logos>
-        <GatsbyIcon />
-        <TypescriptIcon />
-        <StyledComponentsIcon />
-        <TailwindIcon />
-        <TwinIcon />
-      </Logos>
-      <Heading>Hello, world!</Heading>
-      <Text>Welcome to the Gatsby + Tailwind CSS + Styled-Components + Typescript Starter.</Text>
-      <div className="flex justify-between">
-        <Button isPrimary>Primary</Button>
-        <Button isSecondary>Secondary</Button>
-        <Button isPrimary isSmall>
-          Small Primary
-        </Button>
-        <Button isSecondary isSmall>
-          Small Secondary
-        </Button>
-      </div>
-      <Footer>
-        <a
-          href="https://github.com/denvash/gatsby-styled-tailwind-storybook-starter"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <GithubIcon />
-        </a>
-      </Footer>
-    </Main>
-  </Wrapper>
+  <Theme>
+    <div
+      css={[
+        tw`flex flex-col items-center justify-center h-screen`,
+        // Combine regular css and Tailwind styles within backticks
+        css`
+          background: #542c85;
+        `
+      ]}
+    >
+      <Wrapper>
+        <Main>
+          <Logos>
+            <GatsbyIcon />
+            <TypescriptIcon />
+            <StyledComponentsIcon />
+            <TailwindIcon />
+            <TwinIcon />
+          </Logos>
+          <Heading>Hello, world!</Heading>
+          <Text>
+            Welcome to the Gatsby + Tailwind CSS + Styled-Components + Typescript Starter.
+          </Text>
+          <div className="flex justify-between">
+            <Button isPrimary>Primary</Button>
+            <Button isSecondary>Secondary</Button>
+            <Button isPrimary isSmall>
+              Small Primary
+            </Button>
+            <Button isSecondary isSmall>
+              Small Secondary
+            </Button>
+          </div>
+          <Footer>
+            <a
+              href="https://github.com/denvash/gatsby-styled-tailwind-storybook-starter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GithubIcon />
+            </a>
+          </Footer>
+        </Main>
+      </Wrapper>
+    </div>
+  </Theme>
 );
 
 export default Index;
