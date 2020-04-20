@@ -72,7 +72,7 @@ const Index = () => (
           <Text>
             Welcome to the Gatsby + Tailwind CSS + Styled-Components + Typescript Starter.
           </Text>
-          <div tw="flex justify-between">
+          <div className="flex justify-between">
             <Button isPrimary>Primary</Button>
             <Button isSecondary>Secondary</Button>
             <Button isPrimary isSmall>
