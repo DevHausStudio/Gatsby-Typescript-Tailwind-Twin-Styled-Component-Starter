@@ -6,7 +6,7 @@ This is a starter for [Gatsby](https://www.gatsbyjs.org/) websites using:
 
 - [Typescript](https://www.typescriptlang.org/)
 - [Styled Components](https://styled-components.com/)
-- [Talwind CSS](https://tailwindcss.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
 - [Twin.Macro](https://github.com/ben-rogerson/twin.macro)
 
 ## Demo
