@@ -1,4 +1,4 @@
-# Gatsby Typescript Tailwind Twin Styled-Component Starter
+# Gatsby Typescript Tailwind Twin.Macro Styled-Component Starter
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f3a1349e-ba39-4c41-a9e9-a5714ccd4f19/deploy-status)](https://app.netlify.com/sites/gatsby-typescript-tailwind-twin-styled-component-starter/deploys)
 
