@@ -13,7 +13,7 @@ This is a starter for [Gatsby](https://www.gatsbyjs.org/) websites using:
 
 [Gatsby Typescript Tailwind Twin Styled-Component Starter](https://gatsby-typescript-tailwind-twin-styled-component-starter.netlify.app/)
 
-## Usage
+## Example of Usage
 
 1.  **Building Styled Components**
     ``` typescript
