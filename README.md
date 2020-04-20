@@ -13,6 +13,69 @@ This is a starter for [Gatsby](https://www.gatsbyjs.org/) websites using:
 
 [Gatsby Typescript Tailwind Twin Styled-Component Starter](https://gatsby-typescript-tailwind-twin-styled-component-starter.netlify.app/)
 
+## Usage
+
+1.  **Building Styled Components**
+    ``` typescript
+    // Inject Tailwind classes to element using styled-component syntax
+    const Wrapper = styled.div`
+        ${tw`flex flex-col items-center justify-center h-screen`}
+    `;
+    
+    // Use Tailwind classes directly on element
+    const Main = tw.div`
+        p-6 bg-gray-100 rounded-lg shadow-2xl
+    `;
+    
+    // Use Tailwind classes directly within css prop in element mixed with css.
+    <div
+      css={[
+        tw`flex flex-col items-center justify-center h-screen`,
+        // Combine regular css and Tailwind styles within backticks
+        css`
+          background: #542c85;
+        `
+      ]}
+    >
+    ```
+2.  **Building Typescript Components with Props**
+    ``` typescript
+        interface StyledButtonProps {
+            isPrimary?: boolean;
+            isSecondary?: boolean;
+            isSmall?: boolean;
+            theme?: any;
+            children: React.ReactNode;
+        }
+
+        const StyledButton = styled.button(
+        ({ isPrimary, isSecondary, isSmall, theme }: StyledButtonProps) => [
+            // The base button styles added with the tw macro
+            tw`inline-block px-8 py-2 mt-0 mb-5 text-lg 
+                transition-transform duration-75 transform rounded hocus:scale-105 
+                hocus:text-yellow-400 focus:outline-none`,
+
+            // Use props to conditionally style your components
+            isPrimary && tw`text-white bg-red-500 border-red-700`,
+
+            // Combine regular css with Tailwind classes within backticks
+            isSecondary &&
+              css`
+                box-shadow: 0 0.1em 0 0 rgba(0, 0, 0, 0.25);
+                ${tw`bg-orange-500 border-orange-700`}
+              `,
+
+            // Conditional props can be added
+            isSmall ? tw`text-sm` : tw`text-lg`,
+
+            // Your tailwind.config.js styles are added by <Theme> in pages/index.js
+            css`
+              color: ${theme.colors.black};
+            `
+            ]
+        );
+    ```
+
 ## Quick start
 
 1.  **Create a Gatsby site.**
