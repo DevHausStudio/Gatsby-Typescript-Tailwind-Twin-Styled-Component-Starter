@@ -84,7 +84,7 @@ const Index = () => (
           </div>
           <Footer>
             <a
-              href="https://github.com/denvash/gatsby-styled-tailwind-storybook-starter"
+              href="https://github.com/DevHausStudio/Gatsby-Typescript-Tailwind-Twin-Styled-Component-Starter"
               target="_blank"
               rel="noopener noreferrer"
             >
