@@ -11,7 +11,7 @@ import {
 } from '../components';
 import Theme from '../components/theme';
 import Button from '../components/Button';
-/// <reference types="styled-components/cssprop" />
+
 const Wrapper = styled.div`
   ${tw`flex flex-col items-center justify-center h-screen`}
 `;
@@ -72,7 +72,7 @@ const Index = () => (
           <Text>
             Welcome to the Gatsby + Tailwind CSS + Styled-Components + Typescript Starter.
           </Text>
-          <div className="flex justify-between">
+          <div tw="flex justify-between">
             <Button isPrimary>Primary</Button>
             <Button isSecondary>Secondary</Button>
             <Button isPrimary isSmall>

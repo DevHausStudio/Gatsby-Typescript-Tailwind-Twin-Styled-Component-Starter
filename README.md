@@ -2,7 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f3a1349e-ba39-4c41-a9e9-a5714ccd4f19/deploy-status)](https://app.netlify.com/sites/gatsby-typescript-tailwind-twin-styled-component-starter/deploys)
 
-This is a starter for [Gatsby](https://www.gatsbyjs.org/) websites using: 
+This is a starter for [Gatsby](https://www.gatsbyjs.org/) websites using:
+
 - [Typescript](https://www.typescriptlang.org/)
 - [Styled Components](https://styled-components.com/)
 - [Talwind CSS](https://tailwindcss.com/)
