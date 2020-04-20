@@ -38,7 +38,8 @@ This is a starter for [Gatsby](https://www.gatsbyjs.org/) websites using:
       ]}
     >
     ```
-2.  **Building Typescript Components with Props**
+   
+2.  **Building Styled Typescript Components with Props**
     ``` typescript
         interface StyledButtonProps {
             isPrimary?: boolean;
