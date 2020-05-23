@@ -3,6 +3,7 @@
   "description": "",
   "author": "",
   "version": "",
+  "license": "UNLICENSED",
   "babelMacros": {
     "twin": {
       "config": "./tailwind.config.js",
