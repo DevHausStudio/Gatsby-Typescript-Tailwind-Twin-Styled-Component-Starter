@@ -1,19 +1,19 @@
-import React from 'react';
-import tw from 'twin.macro';
+import tw from 'twin.macro'; // eslint-disable-line import/no-extraneous-dependencies
 import styled, { css } from 'styled-components/macro';
 
-interface StyledButtonProps {
+interface StyledButtonProps extends HTMLButtonElement {
   isPrimary?: boolean;
   isSecondary?: boolean;
   isSmall?: boolean;
-  theme?: any;
-  children: React.ReactNode;
+  theme?: object;
 }
 
-const StyledButton = styled.button(
-  ({ isPrimary, isSecondary, isSmall, theme }: StyledButtonProps) => [
+export const StyledButton = styled.button<StyledButtonProps>(
+  ({ isPrimary, isSecondary, isSmall, theme }) => [
     // The base button styles added with the tw macro
-    tw`inline-block px-8 py-2 mt-0 mb-5 text-lg transition-transform duration-75 transform rounded hocus:scale-105 hocus:text-yellow-400 focus:outline-none`,
+    tw`inline-block px-8 py-2 mt-0 mb-5`,
+    tw`text-lg transition-transform duration-75 transform`,
+    tw`rounded hocus:scale-105 hocus:text-yellow-400 focus:outline-none`,
 
     // Use props to conditionally style your components
     isPrimary && tw`text-white bg-red-500 border-red-700`,
@@ -35,6 +35,4 @@ const StyledButton = styled.button(
   ]
 );
 
-const Button = (props: StyledButtonProps) => <StyledButton {...props} />;
-
-export default Button;
+export default StyledButton;

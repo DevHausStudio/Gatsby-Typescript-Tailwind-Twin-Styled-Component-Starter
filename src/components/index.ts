@@ -1,3 +1,3 @@
 export * from './Button';
 export * from './icons';
-export * from './theme';
+export { default } from './theme';

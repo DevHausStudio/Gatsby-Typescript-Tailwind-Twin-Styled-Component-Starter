@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import tw from 'twin.macro';
+import tw from 'twin.macro'; // eslint-disable-line import/no-extraneous-dependencies
 import {
   GatsbyIcon,
   TailwindIcon,
