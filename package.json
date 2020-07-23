@@ -6,12 +6,11 @@
   "license": "UNLICENSED",
   "babelMacros": {
     "twin": {
-      "config": "./tailwind.config.js",
-      "styled": "styled-components",
-      "format": "auto",
+      "config": "src/tailwind.config.js",
+      "preset": "styled-components",
+      "autoCssProp": true,
       "hasSuggestions": true
-    },
-    "styledComponents": {}
+    }
   },
   "scripts": {
     "build": "gatsby build",
@@ -31,8 +30,8 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
-    "styled-components": "^5.1.0",
-    "tailwindcss": "^1.4.6",
+    "styled-components": "^5.1.1",
+    "tailwindcss": "^1.5.1",
     "typescript": "^3.8.3"
   },
   "devDependencies": {
@@ -45,8 +44,8 @@
     "gatsby-plugin-styled-components": "^3.2.3",
     "gatsby-plugin-typescript": "^2.3.3",
     "prettier": "^2.0.4",
-    "twin.macro": "^1.0.0-alpha.9",
-    "typescript-plugin-tw-template": "^1.0.2"
+    "twin.macro": "^1.5.1",
+    "typescript-plugin-tw-template": "^2.0.1"
   },
   "browserslist": [
     ">0.2%",
