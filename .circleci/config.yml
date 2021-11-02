@@ -10,6 +10,7 @@ jobs:
       - node/with-cache:
           steps:
             - run: yarn 
+            - run: export NODE_OPTIONS=--openssl-legacy-provider
             - run: yarn build
 workflows:
     build:
